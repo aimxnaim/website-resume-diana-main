@@ -1,0 +1,37 @@
+[
+  {
+    "role": "Personel MySTEP (E19)",
+    "organisation": "Jabatan Perangkaan Malaysia Negeri Johor",
+    "startDate": "August, 2024",
+    "endDate": "Present",
+    "experiences": [
+      "Capturing Data Accurately. This involves using tools or devices to record data in real-time,ensuring that data entry is precise and consistent. ",
+      "Collecting Data On-Site Through Field Surveys. Involves physically visiting various locations (e.g., farms, agricultural sites) to gather primary data. ",
+      "Conducting Quality Reviews in the Field and Checking Data Forms. This task focuses on ensuring that the data collected is correct and follows specified standards. ",
+      "Generating Queries to Ensure Completeness of Profiles. Involves running checks or generating automated queries within data management systems to identify incomplete records."
+    ],
+    "imageSrc": "history/google.png"
+  },
+  {
+    "role": "Tech Intern",
+    "organisation": "Perbendaharaan Negeri Johor",
+    "startDate": "March, 2024",
+    "endDate": "July, 2024",
+    "experiences": [
+      "Developing the front end of the club system involves using PHP, HTML, CSS, and phpMyAdmin to create an interface where users can view group marks and admins can log in to manage these marks.",
+      "Developing the official website portal for Perbendaharaan Negeri Johor (PNJ) using WordPress involves setting up and configuring WordPress, managing the database with phpMyAdmin, and integrating simple HTML for enhanced visuals."
+    ],
+    "imageSrc": "history/microsoft.png"
+  },
+  {
+    "role": "Tech Intern",
+    "organisation": "Bahagian Perancang Negeri",
+    "startDate": "September, 2021 ",
+    "endDate": "March, 2022",
+    "experiences": [
+      "Develop a website for the Pinjaman Barang ICT (ICT Equipment Loan) system, and this system use PHP, JavaScript, HTML, and CSS, with phpMyAdmin for database management.",
+      "The project includes creating a user-friendly interface where users can request to borrow ICT equipment, track request statuses, and view equipment availability. "
+    ],
+    "imageSrc": "history/netflix.png"
+  }
+]
