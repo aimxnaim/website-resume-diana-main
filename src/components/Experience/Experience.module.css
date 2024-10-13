@@ -22,6 +22,36 @@
   justify-content: space-evenly;
   margin-top: 14px;
 }
+.noListStyle {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.listItem {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.centerSvg {
+  width: 24px;  /* Fixed width */
+  height: 24px; /* Fixed height */
+  margin-right: 8px; /* Spacing between SVG and text */
+  flex-shrink: 0; /* Ensures the SVG does not resize or distort */
+}
+
+.spanText {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+} 
+
+.justifyText {
+  /* Add any additional styling for the text here if needed */
+  text-align: justify;
+
+}
+
 
 .skills {
   width: 45%;
