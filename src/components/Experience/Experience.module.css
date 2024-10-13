@@ -149,3 +149,22 @@
     gap: 9px;
   }
 }
+
+.historyItemDetails {
+  font-family: var(--font-roboto);
+  text-align: left; /* Align text to the left */
+  margin-left: 0; /* Ensure there's no extra margin */
+  padding-left: 0; /* Ensure there's no extra padding */
+}
+
+.historyItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items at the start */
+  gap: 17px;
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 10px;
+  padding: 24px;
+  margin: 0; /* Ensure no margin here */
+}
