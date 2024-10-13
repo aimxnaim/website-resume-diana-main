@@ -46,9 +46,6 @@ export const Experience = () => {
                     })}
                   </ul>
                 </div>
-
-
-
               </li>
             );
           })}

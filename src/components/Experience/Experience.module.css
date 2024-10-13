@@ -36,7 +36,7 @@
 .centerSvg {
   width: 24px;  /* Fixed width */
   height: 24px; /* Fixed height */
-  margin-right: 8px; /* Spacing between SVG and text */
+  margin-right: 16px; /* Spacing between SVG and text */
   flex-shrink: 0; /* Ensures the SVG does not resize or distort */
 }
 
