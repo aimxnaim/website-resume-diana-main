@@ -10,7 +10,7 @@
       "Conducting Quality Reviews in the Field and Checking Data Forms. This task focuses on ensuring that the data collected is correct and follows specified standards. ",
       "Generating Queries to Ensure Completeness of Profiles. Involves running checks or generating automated queries within data management systems to identify incomplete records."
     ],
-    "imageSrc": "history/google.png"
+    "imageSrc": "history/jpm.png"
   },
   {
     "role": "Tech Intern",
@@ -21,7 +21,7 @@
       "Developing the front end of the club system involves using PHP, HTML, CSS, and phpMyAdmin to create an interface where users can view group marks and admins can log in to manage these marks.",
       "Developing the official website portal for Perbendaharaan Negeri Johor (PNJ) using WordPress involves setting up and configuring WordPress, managing the database with phpMyAdmin, and integrating simple HTML for enhanced visuals."
     ],
-    "imageSrc": "history/microsoft.png"
+    "imageSrc": "history/pnj.png"
   },
   {
     "role": "Tech Intern",
@@ -32,6 +32,6 @@
       "Develop a website for the Pinjaman Barang ICT (ICT Equipment Loan) system, and this system use PHP, JavaScript, HTML, and CSS, with phpMyAdmin for database management.",
       "The project includes creating a user-friendly interface where users can request to borrow ICT equipment, track request statuses, and view equipment availability. "
     ],
-    "imageSrc": "history/netflix.png"
+    "imageSrc": "history/bpen.png"
   }
 ]
