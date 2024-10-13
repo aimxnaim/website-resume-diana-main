@@ -7,22 +7,34 @@
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
-  max-width: 345px;
+  max-width: 355px;
+  height: 630px; /* Fixed height for consistency */
 }
 
 .image {
-  margin-bottom: 26px;
+  margin-bottom: 20px; /* Adjusted margin */
+  height: 195px; /* Set a fixed height for the image */
+  width: 310px; /* Ensure the image takes full width */
+  object-fit: fill; /* Maintain aspect ratio */
+  border-radius: 5px;
 }
 
 .title {
   font-size: 25px;
   font-weight: 700;
+  margin-bottom: 8px; /* Space between title and description */
 }
 
 .description {
   margin-top: 6px;
   font-size: 20px;
   font-weight: 400;
+  overflow: hidden; /* Prevent overflow */
+  text-overflow: ellipsis; /* Add ellipsis if overflow */
+  display: -webkit-box; /* For multiline truncation */
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  flex-grow: 1; /* Allow the description to grow as needed */
 }
 
 .skills {
@@ -40,12 +52,12 @@
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
-  padding: 2px 22px;
+  padding: 2px 12px; /* Adjusted padding for better spacing */
 }
 
 .links {
   width: 100%;
-  margin-top: 26px;
+  margin-top: auto; /* Push links to the bottom */
   display: flex;
   justify-content: space-around;
 }
