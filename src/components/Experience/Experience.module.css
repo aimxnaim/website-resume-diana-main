@@ -45,7 +45,8 @@
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 10px;
   padding: 24px;
-  margin-bottom: 30px; /* Added bottom margin to create space between history items */
+  margin-bottom: 40px; /* Added bottom margin to create space between history items */
+  font-size: 20px;
 }
 
 /* Adjust skills section style */

@@ -63,7 +63,7 @@
 }
 
 .aboutItem p {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 830px) {
@@ -111,6 +111,10 @@
   height: 20px; /* Set desired height */
   margin-right: 5px; /* Space between icon and text */
   vertical-align: middle; /* Align icon with the text */
+}
+
+.pabout {
+  font-size: 80px;
 }
 
 
