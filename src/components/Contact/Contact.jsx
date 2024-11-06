@@ -1,3 +1,9 @@
+       /* <a href="mailto:myemail@email.com" className={styles.contactBtn}>
+          Contact Me
+        </a> */
+
+//folder contact
+
 import React from "react";
 
 import styles from "./Contact.module.css";

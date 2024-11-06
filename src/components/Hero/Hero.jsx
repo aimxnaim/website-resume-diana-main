@@ -11,14 +11,13 @@ export const Hero = () => {
         <p className={styles.description}>
           I'm a recent graduate with a degree in Information Systems Engineering, passionate about systems and related fields. Reach out if you'd like to learn more!
         </p>
-        <a href="mailto:myemail@email.com" className={styles.contactBtn}>
-          Contact Me
-        </a>
+
       </div>
       <img
-        src={getImageUrl("hero/heroImage.png")}
+        src={getImageUrl("hero/dianaprofile.png")}
         alt="Hero image of me"
         className={styles.heroImg}
+        style={{ width: "450px", height: "450px" }}
       />
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
