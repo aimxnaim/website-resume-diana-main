@@ -1,41 +1,43 @@
 [
   {
-    "title": "Jabatan Perangkaan Malaysia Negeri Johor",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "title": "e-Scarve System that can Provide Information by Using Contrast Technique",
+    "imageSrc": "projects/escarve.png",
+    "description": "This is a project made to implement a contrast technique using Javascript programming langguage in PHP (laravel Framework) to give a better view for colour blind people and enhance their experience using the website. ",
     "skills": [
-      "React",
-      "Express",
-      "Node",
-      "Sass",
-      "MongoDB"
+      "Mobirise",
+      "CSS",
+      "HTML",
+      "Laravel",
+      "Laragon"
     ],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "title": "Taman Pahlawan Reporting System ",
+    "imageSrc": "projects/tamanpahlawan.png",
+    "description": " Develop a system to report a damage that happen at Taman Pahlawan. This system includes, Administrator, staffs and residents of Taman Pahlawan. The system use Java MVC (Model-View-Controller) framework.",
     "skills": [
-      "React",
-      "Express",
-      "Node",
-      "Sass"
+      "Java",
+      "Heroku",
+      "xampp",
+      "HTML",
+      "CSS",
+      "Bootstrap"
+      
     ],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   },
-  {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+  
+    {
+    "title": "Website Portfolio",
+    "imageSrc": "projects/website.png",
+    "description": " Just a simple website portfolio. Have a look and enjoy ! :))",
     "skills": [
       "React",
       "Express",
-      "Node",
-      "Sass",
-      "MongoDB"
+      "Node"
     ],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
