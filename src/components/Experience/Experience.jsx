@@ -51,6 +51,7 @@ export const Experience = () => {
 
         {/* Skills section placed below */}
         <div className={styles.skills}>
+        <h2 className={styles.title}>Skills</h2>
           {skills.map((skill, id) => {
             return (
               <div key={id} className={styles.skill}>

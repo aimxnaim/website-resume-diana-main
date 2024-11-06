@@ -10,7 +10,7 @@
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
@@ -45,7 +45,7 @@
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 10px;
   padding: 24px;
-  margin-bottom: 20px; /* Added bottom margin to create space between history items */
+  margin-bottom: 30px; /* Added bottom margin to create space between history items */
 }
 
 /* Adjust skills section style */
@@ -58,7 +58,7 @@
 
 /* Ensure skill box size is appropriate */
 .skillImageContainer {
-  background-color: var(--color-secondary);
+  background-color:  #1c3461;
   border-radius: 100%;
   display: flex;
   align-items: center;
