@@ -1,10 +1,11 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 76px;
+  margin-top: 70px;
   color: var(--color-text);
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -21,7 +22,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   width: 100%;
 }
 
+.title {
+  text-align: center;
+}

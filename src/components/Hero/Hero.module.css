@@ -34,7 +34,7 @@
 }
 
 .description {
-  font-size: 30px;
+  font-size: 20px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
 }
@@ -109,3 +109,9 @@
     align-items: center;
   }
 }
+
+.description {
+  text-align: justify; /* Justifies the text */
+  margin: 30px; /* Optional: Adds some space around the paragraph */
+}
+

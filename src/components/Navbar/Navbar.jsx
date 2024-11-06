@@ -9,7 +9,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Portfolio
+        nrdiananrzn
       </a>
       <div className={styles.menu}>
         <img
@@ -26,17 +26,42 @@ export const Navbar = () => {
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         >
+         <li>
+            <a href="https://github.com/Dodideehttps://www.linkedin.com/in/nordiana-sahira-5b004a215/" target="_blank" rel="noopener noreferrer"></a>
+            <img 
+            src={getImageUrl("navbar/linkedin.png")} 
+            alt="linkedin" 
+            className={styles.aboutImage} 
+            style={{ width: "40px", height: "40px" }} 
+            />
+</li>
           <li>
-            <a href="#about">About</a>
+              <a href="https://github.com/Dodidee" target="_blank" rel="noopener noreferrer"></a>
+              <img 
+                src={getImageUrl("navbar/github.png")} 
+                alt="linkedin" 
+                className={styles.aboutImage} 
+                style={{ width: "40px", height: "40px" }} 
+                />
           </li>
-          <li>
-            <a href="#experience">Experience</a>
+          <li>  
+              <a href="https://www.instagram.com/nrdiananrzn/?next=%2F&hl=en" target="_blank" rel="noopener noreferrer">
+                  <img
+                      src={getImageUrl("navbar/ig.png")}
+                      alt="instagram"
+                      className={styles.aboutImage}
+                      style={{ width: "40px", height: "40px" }}
+                  />
+              </a>
           </li>
+
           <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
+          <img 
+            src={getImageUrl("navbar/resume.png")} 
+            alt="linkedin" 
+            className={styles.aboutImage} 
+            style={{ width: "40px", height: "40px" }} 
+            />
           </li>
         </ul>
       </div>

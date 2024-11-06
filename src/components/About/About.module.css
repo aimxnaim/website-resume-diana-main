@@ -63,7 +63,7 @@
 }
 
 .aboutItem p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 830px) {
@@ -82,7 +82,7 @@
   }
 
   .aboutItems {
-    margin-top: 29px;
+    margin-top: 20px;
   }
 
   .aboutItem {
@@ -90,3 +90,31 @@
     padding-right: 0;
   }
 }
+
+.resizeImage {
+  width: 50%;  /* Make the image 20% bigger */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.justifyText {
+  text-align: justify;
+}
+
+.title {
+  margin-top: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.icon {
+  width: 20px; /* Set desired width */
+  height: 20px; /* Set desired height */
+  margin-right: 5px; /* Space between icon and text */
+  vertical-align: middle; /* Align icon with the text */
+}
+
+.pabout {
+  font-size: 80px;
+}
+
+
