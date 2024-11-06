@@ -6,11 +6,11 @@ import { getImageUrl } from "../../utils";
 export const About = () => {
   return (
     <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
+      <h2 className={styles.title}>About Me</h2>
       <div className={styles.content}>
       <img
-          src={getImageUrl("about/aboutdee.png")}
-          alt="Me sitting with a laptop"
+          src={getImageUrl("about/aboutdiana.png")} 
+          alt="smile hold ipad"
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
@@ -35,7 +35,7 @@ export const About = () => {
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/uiIcon.png")} alt="UI icon" />
+            <img src={getImageUrl("about/uiIcon.png")} alt="UI icon" /> 
             <div className={styles.aboutItemText}>
               <h3>UI Designer</h3>
               <p>

@@ -1,10 +1,11 @@
-@import "../../vars.css";
-
+/* Experience.module.css */
 .container {
   color: var(--color-text);
   margin-top: 80px;
   margin-left: 10%;
   margin-right: 10%;
+  padding: 40px; /* Increased padding to make the container bigger */
+  min-height: 600px; /* Ensures the container has a larger height */
 }
 
 .title {
@@ -16,155 +17,73 @@
   margin-bottom: 40px;
 }
 
+/* Ensures the content flexbox is large enough to contain both sections */
 .content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 14px;
+  flex-direction: column;
+  gap: 40px; /* Increased gap to separate sections further */
+  min-height: 550px; /* Ensures content area is larger */
 }
+
+.history, .skills {
+  width: 100%; /* Full width for both sections */
+}
+
+/* Make sure the list style is removed from the history items */
 .noListStyle {
   padding-left: 0;
   margin-left: 0;
 }
 
-.listItem {
-  list-style-type: none;
+/* Adjust history items to have a bit more space between them */
+.historyItem {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  gap: 45px; /* Increased gap between items */
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px; /* Added bottom margin to create space between history items */
 }
 
-.centerSvg {
-  width: 24px;  /* Fixed width */
-  height: 24px; /* Fixed height */
-  margin-right: 16px; /* Spacing between SVG and text */
-  flex-shrink: 0; /* Ensures the SVG does not resize or distort */
-}
-
-.spanText {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 10px;
-} 
-
-.justifyText {
-  /* Add any additional styling for the text here if needed */
-  text-align: justify;
-
-}
-
-
+/* Adjust skills section style */
 .skills {
-  width: 45%;
   display: flex;
   flex-wrap: wrap;
-  gap: 37px;
+  justify-content: space-evenly; /* Makes the skills section more evenly spaced */
+  gap: 40px; /* Increased gap for spacing between skills */
 }
 
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 11px;
-}
-
+/* Ensure skill box size is appropriate */
 .skillImageContainer {
   background-color: var(--color-secondary);
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
-  height: 120px;
+  width: 140px; /* Increased width */
+  height: 140px; /* Increased height */
 }
 
 .skillImageContainer img {
-  width: 75px;
+  width: 90px; /* Adjusted the image size */
 }
 
 .skill p {
-  font-size: 25px;
+  font-size: 18px;
   font-family: var(--font-roboto);
   font-weight: 500;
 }
 
-.history {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.historyItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 17px;
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-  border-radius: 10px;
-  padding: 24px;
-}
-
-.historyItem img {
-  width: 50px;
-}
-
-.historyItemDetails {
-  font-family: var(--font-roboto);
-}
-
-.historyItemDetails h3 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.historyItemDetails p {
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.historyItemDetails ul {
-  margin-top: 6px;
-  list-style-position: inside;
-  font-size: 17px;
-  list-style-type: disc;
-  margin-left: 17px;
-}
-
-@media screen and (max-width: 830px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
-  }
-
-  .skills {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .history {
-    width: 100%;
-    gap: 9px;
-  }
-}
-
-.historyItemDetails {
-  font-family: var(--font-roboto);
-  text-align: left; /* Align text to the left */
-  margin-left: 0; /* Ensure there's no extra margin */
-  padding-left: 0; /* Ensure there's no extra padding */
-}
-
-.historyItem {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start; /* Align items at the start */
-  gap: 17px;
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-  border-radius: 10px;
-  padding: 24px;
-  margin: 0; /* Ensure no margin here */
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center; /* Centers text */
+  width: 100%; /* Ensures it takes full width */
 }

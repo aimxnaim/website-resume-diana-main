@@ -63,7 +63,7 @@
 }
 
 .aboutItem p {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 830px) {
@@ -89,4 +89,9 @@
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.resizeImage {
+  width: 50%;  /* Make the image 20% bigger */
+  height: auto; /* Maintain aspect ratio */
 }
