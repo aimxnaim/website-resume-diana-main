@@ -4,6 +4,8 @@
     "imageSrc": "projects/escarve.png",
     "description": "This is a project made to implement a contrast technique using Javascript programming langguage in PHP (laravel Framework) to give a better view for colour blind people and enhance their experience using the website. ",
     "skills": [
+      "Javascript",
+      "Java",
       "Mobirise",
       "CSS",
       "HTML",
@@ -19,8 +21,9 @@
     "description": " Develop a system to report a damage that happen at Taman Pahlawan. This system includes, Administrator, staffs and residents of Taman Pahlawan. The system use Java MVC (Model-View-Controller) framework.",
     "skills": [
       "Java",
+      "Javascript",
       "Heroku",
-      "xampp",
+      "Postman  ",
       "HTML",
       "CSS",
       "Bootstrap"
@@ -37,7 +40,10 @@
     "skills": [
       "React",
       "Express",
-      "Node"
+      "Node",
+      "HTML",
+      "CSS",
+      "Javascript"
     ],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"

@@ -8,9 +8,10 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        nrdiananrzn
-      </a>
+      <div className={styles.logoTitle}>
+        <img src={getImageUrl("logo/nslogo.png")} alt="logo" className={styles.logo} style={{ height: "40px" }} />
+        {/* <a className={styles.title} href="/">nrdiananrzn</a> */}
+      </div>
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
@@ -26,42 +27,41 @@ export const Navbar = () => {
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         >
-         <li>
-            <a href="https://github.com/Dodideehttps://www.linkedin.com/in/nordiana-sahira-5b004a215/" target="_blank" rel="noopener noreferrer"></a>
-            <img 
-            src={getImageUrl("navbar/linkedin.png")} 
-            alt="linkedin" 
-            className={styles.aboutImage} 
-            style={{ width: "40px", height: "40px" }} 
-            />
-</li>
           <li>
-              <a href="https://github.com/Dodidee" target="_blank" rel="noopener noreferrer"></a>
-              <img 
-                src={getImageUrl("navbar/github.png")} 
-                alt="linkedin" 
-                className={styles.aboutImage} 
-                style={{ width: "40px", height: "40px" }} 
-                />
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img
+                src={getImageUrl("navbar/linkedin.png")}
+                alt="linkedin"
+                className={styles.aboutImage}
+              />
+            </a>
           </li>
-          <li>  
-              <a href="https://www.instagram.com/nrdiananrzn/?next=%2F&hl=en" target="_blank" rel="noopener noreferrer">
-                  <img
-                      src={getImageUrl("navbar/ig.png")}
-                      alt="instagram"
-                      className={styles.aboutImage}
-                      style={{ width: "40px", height: "40px" }}
-                  />
-              </a>
-          </li>
-
           <li>
-          <img 
-            src={getImageUrl("navbar/resume.png")} 
-            alt="linkedin" 
-            className={styles.aboutImage} 
-            style={{ width: "40px", height: "40px" }} 
-            />
+            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+              <img
+                src={getImageUrl("navbar/github.png")}
+                alt="github"
+                className={styles.aboutImage}
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/nrdiananrzn/?next=%2F&hl=en" target="_blank" rel="noopener noreferrer">
+              <img
+                src={getImageUrl("navbar/ig.png")}
+                alt="instagram"
+                className={styles.aboutImage}
+              />
+            </a>
+          </li>
+          <li>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <img
+                src={getImageUrl("navbar/resume.png")}
+                alt="resume"
+                className={styles.aboutImage}
+              />
+            </a>
           </li>
         </ul>
       </div>

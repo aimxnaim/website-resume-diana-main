@@ -10,11 +10,17 @@
   margin: 0 10%;
 }
 
+.logoTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Adjusts space between logo and title */
+}
 .title {
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
+  padding-left: 20px;
 }
 
 
@@ -36,6 +42,11 @@
   font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
+}
+
+.aboutImage {
+  width: 40px;
+  height: 40px
 }
 
 @media screen and (max-width: 830px) {

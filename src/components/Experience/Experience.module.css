@@ -88,3 +88,8 @@
   text-align: center; /* Centers text */
   width: 100%; /* Ensures it takes full width */
 }
+
+.space {
+  margin-top: 20px; /* Adds space above */
+
+}
