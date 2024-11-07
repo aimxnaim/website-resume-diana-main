@@ -1,64 +1,28 @@
 @import "../../vars.css";
 
+.footer {
+  border-top: 1px solid #171717; /* Equivalent to border-neutral-900 */
+  margin-top: 1.75rem; /* Equivalent to mt-7 */
+}
+
 .container {
-  color: var(--color-text);
-  margin-top: 120px;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100vw;
-  padding: 58px 10%;
-  gap: 10px;
+  width: 100%;
+  max-width: 1280px; /* Equivalent to max-w-screen-xl */
+  margin: 0 auto; /* Centering with mx-auto */
+  padding: 1rem; /* Equivalent to p-4 */
+  padding-top: 2rem; /* Equivalent to md:py-8 */
+  margin-bottom: 40px;
 }
 
-.text h2 {
-  font-size: 55px;
-  font-weight: 700;
-  letter-spacing: 4px;
+.text {
+  display: block;
+  margin-top: 1.5rem; /* Equivalent to mt-6 */
+  margin-bottom: 0.25rem; /* Equivalent to mb-1 */
+  text-align: center;
+  font-size: 1rem; /* Equivalent to text-sm */
+  color: #6b7280; /* Equivalent to text-gray-500 */
 }
 
-.text p {
-  font-size: 25px;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  list-style: none;
-  gap: 26px;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.link a {
-  color: var(--color-text);
-  text-decoration: none;
-  font-size: 23px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
-}
-
-@media screen and (max-width: 830px) {
-  .container {
-    flex-direction: column;
-    gap: 23px;
-  }
-
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .links {
-    align-items: center;
-  }
+.text.dark {
+  color: #9ca3af; /* Equivalent to dark:text-gray-400 */
 }
