@@ -57,12 +57,14 @@ export const Navbar = () => {
           </li>
 
           <li>
+            <a href= "file:///C:/Users/User/Downloads/RESUME-NORDIANA%20SAHIRA%20BINTI%20NORIZAN.pdf" target="_blank" rel="noopener noreferrer">
           <img 
             src={getImageUrl("navbar/resume.png")} 
-            alt="linkedin" 
+            alt="resume" 
             className={styles.aboutImage} 
             style={{ width: "40px", height: "40px" }} 
             />
+            </a>
           </li>
         </ul>
       </div>

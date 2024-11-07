@@ -8,6 +8,8 @@
       "CSS",
       "HTML",
       "Laravel",
+      "Java",
+      "Javascript",
       "Laragon"
     ],
     "demo": "https://www.example.com",
@@ -20,9 +22,11 @@
     "skills": [
       "Java",
       "Heroku",
-      "xampp",
+      "Postman",
       "HTML",
       "CSS",
+      "Java",
+      "Javascript",
       "Bootstrap"
       
     ],
@@ -37,6 +41,10 @@
     "skills": [
       "React",
       "Express",
+      "Java",
+      "Javascript",
+      "HTML",
+      "CSS",
       "Node"
     ],
     "demo": "https://www.example.com",

@@ -62,3 +62,16 @@
     align-items: center;
   }
 }
+
+.custom-footer {
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333; /* Dark text color */
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid #e0e0e0; /* Optional: light line at the top of the footer */
+}
+
+.custom-footer p {
+  margin: 0;
+}
