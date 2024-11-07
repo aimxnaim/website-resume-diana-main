@@ -112,6 +112,7 @@
 
 .description {
   text-align: justify; /* Justifies the text */
-  margin: 30px; /* Optional: Adds some space around the paragraph */
+  /* margin: 30px;  */
+  margin-right: 40px;
 }
 
