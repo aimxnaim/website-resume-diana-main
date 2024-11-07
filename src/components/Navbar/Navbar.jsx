@@ -28,7 +28,7 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(false)}
         >
           <li>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/nordiana-sahira/" target="_blank" rel="noopener noreferrer">
               <img
                 src={getImageUrl("navbar/linkedin.png")}
                 alt="linkedin"
@@ -37,7 +37,7 @@ export const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Dodidee" target="_blank" rel="noopener noreferrer">
               <img
                 src={getImageUrl("navbar/github.png")}
                 alt="github"
