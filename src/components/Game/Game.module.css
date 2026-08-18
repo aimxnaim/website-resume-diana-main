@@ -1,0 +1,140 @@
+@import "../../vars.css";
+
+.container {
+  composes: section from global;
+  text-align: center;
+}
+
+.head {
+  margin: 0 auto 32px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.head h2 {
+  font-family: var(--font-pixel);
+  font-size: clamp(18px, 2.6vw, 26px);
+}
+
+.hint {
+  font-family: var(--font-mono);
+  font-size: 19px;
+  color: var(--color-muted);
+  margin-bottom: 18px;
+}
+
+.hint strong {
+  color: var(--color-yellow);
+}
+
+.charGrid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.charOption {
+  background: var(--color-panel);
+  border: 3px solid var(--color-outline);
+  padding: 14px 10px;
+  width: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  color: var(--color-muted);
+  box-shadow: 3px 3px 0 var(--color-outline);
+  transition: transform 0.1s ease, box-shadow 0.1s ease,
+    border-color 0.15s ease, color 0.15s ease;
+}
+
+.charOption:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--color-outline);
+}
+
+.selected {
+  border-color: var(--color-yellow);
+  color: var(--color-text);
+}
+
+.charEmoji {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.charName {
+  font-size: 15px;
+  letter-spacing: 0.03em;
+}
+
+.screenWrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.screen {
+  padding: 10px;
+  position: relative;
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  inset: 10px;
+  background: rgba(18, 12, 30, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  /* visibility, not just opacity, is what removes PLAY AGAIN from the tab
+     order — otherwise a keyboard user can Tab to an invisible button and
+     restart a run that is already in progress. */
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.overlayTitle {
+  font-family: var(--font-pixel);
+  font-size: 16px;
+  color: var(--color-pink);
+  margin-bottom: 12px;
+}
+
+.overlayScore {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  color: var(--color-text);
+  margin-bottom: 18px;
+}
+
+.startRow {
+  margin-top: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .charOption,
+  .overlay {
+    transition: none;
+  }
+}

@@ -1,60 +1,77 @@
 import React from "react";
+
 import styles from "./Experience.module.css";
-import skills from "../../data/skills.json";
+import { PixelFrame } from "../PixelFrame/PixelFrame";
+import { useReveal } from "../../hooks/useReveal";
 import history from "../../data/history.json";
 import { getImageUrl } from "../../utils";
 
+const HistoryCard = ({ item }) => {
+  const [ref, inView] = useReveal();
+
+  return (
+    <li ref={ref} className={`reveal ${inView ? "in-view" : ""}`}>
+      <PixelFrame innerClassName={styles.card}>
+        <div className={styles.cardHead}>
+          <PixelFrame size="sm" innerClassName={styles.logo}>
+            {item.imageSrc ? (
+              <img
+                src={getImageUrl(item.imageSrc)}
+                alt={`${item.organisation} logo`}
+              />
+            ) : (
+              <span className={styles.monogram} aria-hidden="true">
+                {item.logoText}
+              </span>
+            )}
+          </PixelFrame>
+          <div>
+            <h3 className={styles.role}>{item.role}</h3>
+            <p className={styles.org}>{item.organisation}</p>
+            <span className={styles.dates}>
+              {item.startDate.trim()} — {item.endDate.trim()}
+            </span>
+            {item.location && (
+              <span className={styles.location}>{item.location}</span>
+            )}
+          </div>
+        </div>
+
+        <ul className={styles.bullets}>
+          {item.experiences.map((experience, id) => (
+            <li key={id} className={styles.bullet}>
+              <span className={styles.marker} aria-hidden="true">
+                ▸
+              </span>
+              <span>{experience.trim()}</span>
+            </li>
+          ))}
+        </ul>
+      </PixelFrame>
+    </li>
+  );
+};
+
 export const Experience = () => {
+  const [headRef, headInView] = useReveal();
+
   return (
     <section className={styles.container} id="experience">
-      <h2 className={styles.title}>Experience</h2>
-
-      <div className={styles.content}>
-
-        {/* History section placed above */}
-        <ul className={styles.history}>
-          {history.map((historyItem, id) => {
-            return (
-              <li key={id} className={styles.historyItem}>
-                <img
-                  src={getImageUrl(historyItem.imageSrc)}
-                  alt={`${historyItem.organisation} Logo`}
-                  style={{ width: "122px", marginTop: "15px", marginRight: "12px" }}
-                />
-                <div className={styles.historyItemDetails}>
-                  <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
-                  <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
-                  <div className={styles.space}></div>
-                  <ul className={styles.noListStyle}>
-                    {historyItem.experiences.map((experience, id) => {
-                      return (
-                        <li key={id} className={`${styles.justifyText} ${styles.listItem}`}>
-                          <span className={styles.spanText}>{experience}</span>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-
-        {/* Skills section placed below */}
-        <div className={styles.skills}>
-          <h2 className={styles.title}>Skills</h2>
-          {skills.map((skill, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-                </div>
-                <p>{skill.title}</p>
-              </div>
-            );
-          })}
+      <div
+        ref={headRef}
+        className={`section-head reveal ${headInView ? "in-view" : ""}`}
+      >
+        <div className="eyebrow">
+          <span className="lv">LV.02</span> WHERE I&apos;VE WORKED
         </div>
+        <h2>EXPERIENCE</h2>
       </div>
+
+      <ul className={styles.history}>
+        {history.map((item, id) => (
+          <HistoryCard key={id} item={item} />
+        ))}
+      </ul>
     </section>
   );
 };

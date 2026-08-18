@@ -1,0 +1,99 @@
+@import "../../vars.css";
+
+.container {
+  composes: section from global;
+}
+
+.group {
+  margin-bottom: 40px;
+}
+
+.meterRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.meterLabel {
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.meterLevel {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--color-muted);
+}
+
+.meterBar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 18px;
+}
+
+.seg {
+  width: 26px;
+  height: 14px;
+  background: var(--color-panel-soft);
+  border: 2px solid var(--color-outline);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.filled.c1 {
+  background: var(--color-pink);
+}
+
+.filled.c2 {
+  background: var(--color-blue);
+}
+
+.filled.c3 {
+  background: var(--color-green);
+}
+
+.filled.c4 {
+  background: var(--color-purple);
+}
+
+.inView .seg {
+  transform: scaleX(1);
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.iconRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: var(--color-panel-soft);
+}
+
+.icon img {
+  display: block;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seg {
+    transform: scaleX(1);
+    transition: none;
+  }
+}

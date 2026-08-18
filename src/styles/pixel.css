@@ -1,0 +1,221 @@
+@import "../vars.css";
+
+/* ---------- backdrop overlays ---------- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 26px 26px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.18) 0px,
+    rgba(0, 0, 0, 0.18) 1px,
+    transparent 2px,
+    transparent 3px
+  );
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.5;
+}
+
+/* ---------- layout ---------- */
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 120px 24px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.section-head {
+  margin-bottom: 48px;
+  max-width: 640px;
+}
+
+.section-head h2 {
+  font-family: var(--font-pixel);
+  font-size: clamp(18px, 2.6vw, 26px);
+}
+
+.pixel-font {
+  font-family: var(--font-pixel);
+}
+
+/* ---------- pixel frame ---------- */
+.pf-clip {
+  clip-path: polygon(
+    0 var(--pf-step),
+    var(--pf-step) var(--pf-step),
+    var(--pf-step) 0,
+    calc(100% - var(--pf-step)) 0,
+    calc(100% - var(--pf-step)) var(--pf-step),
+    100% var(--pf-step),
+    100% calc(100% - var(--pf-step)),
+    calc(100% - var(--pf-step)) calc(100% - var(--pf-step)),
+    calc(100% - var(--pf-step)) 100%,
+    var(--pf-step) 100%,
+    var(--pf-step) calc(100% - var(--pf-step)),
+    0 calc(100% - var(--pf-step))
+  );
+}
+
+.pf-outer {
+  background: var(--color-outline);
+  padding: var(--pf-border);
+  filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, 0.55));
+  transition: transform 0.2s ease;
+}
+
+.pf-inner {
+  background: var(--color-panel);
+  height: 100%;
+}
+
+.pf-sm {
+  --pf-step: 5px;
+  --pf-border: 3px;
+}
+
+.pf-lg {
+  --pf-step: 10px;
+  --pf-border: 5px;
+}
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 14px;
+  border: 3px solid var(--color-outline);
+  box-shadow: 4px 4px 0 var(--color-outline);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--color-outline);
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--color-outline);
+}
+
+.btn-primary {
+  background: var(--color-yellow);
+  color: var(--color-ink);
+}
+
+.btn-ghost {
+  background: var(--color-panel);
+  color: var(--color-text);
+}
+
+/* ---------- focus (the reference defines none) ---------- */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-green);
+  outline-offset: 3px;
+}
+
+/* ---------- eyebrow ---------- */
+.eyebrow {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  color: var(--color-green);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.eyebrow .lv {
+  background: var(--color-outline);
+  color: var(--color-yellow);
+  padding: 4px 8px;
+}
+
+/* ---------- tags & chips ---------- */
+.tag {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  padding: 3px 10px;
+  background: var(--color-panel-soft);
+  border: 2px solid var(--color-outline);
+  color: var(--color-muted);
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  padding: 6px 14px;
+  border: 2px solid var(--color-outline);
+  transition: transform 0.15s ease;
+}
+
+.chip:hover {
+  transform: translateY(-3px);
+}
+
+.chip-c1 {
+  background: rgba(255, 77, 125, 0.16);
+  color: var(--color-pink);
+}
+
+.chip-c2 {
+  background: rgba(79, 214, 255, 0.16);
+  color: var(--color-blue);
+}
+
+.chip-c3 {
+  background: rgba(51, 255, 158, 0.16);
+  color: var(--color-green);
+}
+
+.chip-c4 {
+  background: rgba(185, 139, 255, 0.16);
+  color: var(--color-purple);
+}
+
+/* ---------- scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .pf-outer,
+  .btn,
+  .chip {
+    transition: none;
+  }
+}

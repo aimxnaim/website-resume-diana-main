@@ -1,11 +1,29 @@
 :root {
-  /* Colours */
-  --color-text: #fff;
-  --color-primary: #576cbc;
-  --color-secondary: #19376d;
-  --color-dark: #0b2447;
-  --color-bg: #04152d;
+  /* Surfaces */
+  --color-bg: #120c1e;
+  --color-panel: #231a3d;
+  --color-panel-soft: #2c2150;
+  --color-outline: #000000;
+
+  /* Type */
+  --color-text: #f5f1ff;
+  /* dark ink for text sitting ON the yellow/pink accents */
+  --color-ink: #1a1024;
+  --color-muted: #a99fcf;
+
+  /* Accents */
+  --color-yellow: #ffd23f;
+  --color-pink: #ff4d7d;
+  --color-green: #33ff9e;
+  --color-blue: #4fd6ff;
+  --color-purple: #b98bff;
+
+  /* Pixel frame geometry */
+  --pf-step: 8px;
+  --pf-border: 4px;
 
   /* Fonts */
-  --font-roboto: "Roboto";
+  --font-pixel: "Press Start 2P", monospace;
+  --font-mono: "VT323", monospace;
+  --font-ui: "Inter", system-ui, sans-serif;
 }

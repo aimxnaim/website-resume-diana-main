@@ -1,28 +1,75 @@
 @import "../../vars.css";
 
-.footer {
-  border-top: 1px solid #171717; /* Equivalent to border-neutral-900 */
-  margin-top: 1.75rem; /* Equivalent to mt-7 */
+.container {
+  composes: section from global;
+  text-align: center;
 }
 
-.container {
-  width: 100%;
-  max-width: 1280px; /* Equivalent to max-w-screen-xl */
-  margin: 0 auto; /* Centering with mx-auto */
-  padding: 1rem; /* Equivalent to p-4 */
-  padding-top: 2rem; /* Equivalent to md:py-8 */
+.heading {
+  font-family: var(--font-pixel);
+  font-size: clamp(20px, 3.6vw, 30px);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.copy {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--color-muted);
+  max-width: 480px;
+  margin: 0 auto 36px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
-.text {
-  display: block;
-  margin-top: 1.5rem; /* Equivalent to mt-6 */
-  margin-bottom: 0.25rem; /* Equivalent to mb-1 */
-  text-align: center;
-  font-size: 1rem; /* Equivalent to text-sm */
-  color: #6b7280; /* Equivalent to text-gray-500 */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.text.dark {
-  color: #9ca3af; /* Equivalent to dark:text-gray-400 */
+.pill {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  padding: 8px 18px;
+  border: 2px solid var(--color-outline);
+  background: var(--color-panel);
+  color: var(--color-muted);
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.pill:hover {
+  color: var(--color-yellow);
+  transform: translateY(-3px);
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+  padding: 40px 24px 60px;
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 17px;
+  border-top: 3px solid var(--color-outline);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pill {
+    transition: none;
+  }
+
+  .pill:hover {
+    transform: none;
+  }
 }

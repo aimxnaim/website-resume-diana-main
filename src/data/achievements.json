@@ -1,0 +1,23 @@
+[
+  {
+    "icon": "🎓",
+    "value": "3.17",
+    "label": "CGPA, BSc Information Systems Engineering"
+  },
+  {
+    "icon": "💼",
+    "value": "3",
+    "countTo": 3,
+    "label": "roles across government technology"
+  },
+  {
+    "icon": "📊",
+    "value": "10+",
+    "label": "locations surveyed for field data collection"
+  },
+  {
+    "icon": "⏱️",
+    "value": "~2 YRS",
+    "label": "hands-on data and systems experience"
+  }
+]

@@ -1,95 +1,108 @@
-/* Experience.module.css */
+@import "../../vars.css";
+
 .container {
-  color: var(--color-text);
-  margin-top: 80px;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 40px; /* Increased padding to make the container bigger */
-  min-height: 600px; /* Ensures the container has a larger height */
+  composes: section from global;
 }
 
-.title {
-  color: var(--color-text);
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-/* Ensures the content flexbox is large enough to contain both sections */
-.content {
+.history {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Increased gap to separate sections further */
-  min-height: 550px; /* Ensures content area is larger */
+  gap: 28px;
 }
 
-.history, .skills {
-  width: 100%; /* Full width for both sections */
+.card {
+  padding: 26px;
 }
 
-/* Make sure the list style is removed from the history items */
-.noListStyle {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-/* Adjust history items to have a bit more space between them */
-.historyItem {
+.cardHead {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 45px; /* Increased gap between items */
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-  border-radius: 10px;
-  padding: 24px;
-  margin-bottom: 40px; /* Added bottom margin to create space between history items */
-  font-size: 20px;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 20px;
 }
 
-/* Adjust skills section style */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; /* Makes the skills section more evenly spaced */
-  gap: 40px; /* Increased gap for spacing between skills */
-}
-
-/* Ensure skill box size is appropriate */
-.skillImageContainer {
-  background-color:  #1c3461;
-  border-radius: 100%;
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 140px; /* Increased width */
-  height: 140px; /* Increased height */
+  padding: 10px;
+  flex-shrink: 0;
+  background: var(--color-panel-soft);
 }
 
-.skillImageContainer img {
-  width: 90px; /* Adjusted the image size */
+.logo img {
+  display: block;
+  width: 72px;
+  height: auto;
 }
 
-.skill p {
-  font-size: 20px;
-  font-family: var(--font-roboto);
-  font-weight: 500;
+/* Shown in place of the logo for employers with no image asset. */
+.monogram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  font-family: var(--font-pixel);
+  font-size: 16px;
+  color: var(--color-yellow);
 }
 
-.title {
+.role {
+  font-family: var(--font-pixel);
+  font-size: 13px;
   color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  text-align: center; /* Centers text */
-  width: 100%; /* Ensures it takes full width */
+  margin-bottom: 8px;
 }
 
-.space {
-  margin-top: 20px; /* Adds space above */
+.org {
+  font-family: var(--font-mono);
+  font-size: 19px;
+  color: var(--color-blue);
+  margin-bottom: 10px;
+}
 
+.dates {
+  display: inline-block;
+  font-family: var(--font-pixel);
+  font-size: 9px;
+  background: var(--color-yellow);
+  color: var(--color-ink);
+  border: 2px solid var(--color-outline);
+  padding: 5px 8px;
+}
+
+.location {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: var(--font-mono);
+  font-size: 17px;
+  color: var(--color-muted);
+}
+
+.bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bullet {
+  display: flex;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 19px;
+  color: var(--color-muted);
+}
+
+.marker {
+  color: var(--color-green);
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 620px) {
+  .cardHead {
+    flex-direction: column;
+  }
 }
