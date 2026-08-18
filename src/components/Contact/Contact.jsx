@@ -3,9 +3,7 @@ import React from "react";
 import styles from "./Contact.module.css";
 import { useReveal } from "../../hooks/useReveal";
 
-// No email address is available for the site owner yet. Set this to a real
-// address to switch the primary CTA from LinkedIn to a mailto: button.
-export const CONTACT_EMAIL = null;
+export const CONTACT_EMAIL = "nordianasahira1002@gmail.com";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/nordiana-sahira/";
 
@@ -30,8 +28,9 @@ export const Contact = () => {
           </div>
           <h2 className={styles.heading}>READY PLAYER TWO?</h2>
           <p className={styles.copy}>
-            Interested in projects involving the PHP Laravel framework and
-            system development. Let&apos;s build something together.
+            Open to work in data analysis, data validation and system
+            implementation. If you have datasets that need making sense of, or a
+            system that needs getting live, let&apos;s talk.
           </p>
 
           <div className={styles.actions}>
@@ -77,7 +76,7 @@ export const Contact = () => {
 
       <footer className={styles.footer}>
         <span>Built and designed by Nordiana Sahira</span>
-        <span>© 2024. All Rights Reserved.</span>
+        <span>© 2026. All Rights Reserved.</span>
       </footer>
     </>
   );

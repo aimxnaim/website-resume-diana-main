@@ -1,37 +1,50 @@
 [
   {
-    "role": "Personel MySTEP (E19)",
-    "organisation": "Jabatan Perangkaan Malaysia Negeri Johor",
-    "startDate": "August, 2024",
-    "endDate": "Present",
+    "role": "Junior Data Analyst",
+    "organisation": "ICT@Johor",
+    "location": "Iskandar Puteri, Johor",
+    "startDate": "April, 2026",
+    "endDate": "Now",
     "experiences": [
-      "Capturing Data Accurately. This involves using tools or devices to record data in real-time,ensuring that data entry is precise and consistent. ",
-      "Collecting Data On-Site Through Field Surveys. Involves physically visiting various locations (e.g., farms, agricultural sites) to gather primary data. ",
-      "Conducting Quality Reviews in the Field and Checking Data Forms. This task focuses on ensuring that the data collected is correct and follows specified standards. ",
-      "Generating Queries to Ensure Completeness of Profiles. Involves running checks or generating automated queries within data management systems to identify incomplete records."
+      "Manage project implementation activities for the Johor Land Revenue System (SHTJ) and JohorPay, ensuring delivery aligns with defined timelines, scope and quality requirements.",
+      "Coordinate with vendors, end users and multiple stakeholders to support smooth project implementation and resolve project issues.",
+      "Monitor project performance through proactive risk, issue and mitigation management.",
+      "Coordinate Sprint, SIT, UAT, FAT and data migration activities to support system readiness and successful implementation.",
+      "Perform data analysis and validation for the Bantuan Kasih Johor (BKJ) project to support data verification, reporting and decision-making.",
+      "Extract, clean, transform and analyse datasets from multiple sources to identify data inconsistencies, trends and key insights.",
+      "Prepare data summaries, reports and dashboards to communicate findings and support management decision-making.",
+      "Conduct data validation and quality checks to ensure data accuracy, completeness and consistency."
+    ],
+    "logoText": "ICT"
+  },
+  {
+    "role": "Personel MySTEP (Setaraf Ijazah)",
+    "organisation": "Pejabat Pengarah Tanah dan Galian (PTG) Johor",
+    "location": "Iskandar Puteri, Johor",
+    "startDate": "February, 2025",
+    "endDate": "March, 2026",
+    "experiences": [
+      "Provided technical support and maintenance for departmental systems, including Carian e-Strata Online, SBKS and eLCM, ensuring system functionality, performance and availability.",
+      "Performed system monitoring, troubleshooting and technical issue resolution to support day-to-day operations and minimise service disruptions.",
+      "Supported system development and enhancement activities by analysing user requirements, identifying technical issues and coordinating necessary improvements.",
+      "Designed digital materials, including posters, graphics and videos, for departmental announcements, awareness campaigns and official initiatives.",
+      "Managed official digital communication channels and published system-related information, announcements and updates."
+    ],
+    "logoText": "PTG"
+  },
+  {
+    "role": "Data Processing & Validation",
+    "organisation": "Department of Statistics Malaysia, Johor",
+    "location": "Johor Bahru, Johor",
+    "startDate": "August, 2024",
+    "endDate": "December, 2024",
+    "experiences": [
+      "Performed data entry, validation and verification to maintain data integrity and ensure the accuracy of information prior to submission and official storage.",
+      "Collected and analysed data from more than 10 locations through interviews and observations to obtain accurate, complete and reliable datasets.",
+      "Conducted data cleaning and quality checks by identifying missing, inconsistent and inaccurate information and performing the necessary corrections.",
+      "Analysed datasets to identify patterns, discrepancies and trends, supporting accurate reporting and informed decision-making.",
+      "Prepared and organised data summaries and reports to facilitate data review, analysis and management reporting."
     ],
     "imageSrc": "history/jpm.png"
-  },
-  {
-    "role": "Tech Intern",
-    "organisation": "Perbendaharaan Negeri Johor",
-    "startDate": "March, 2024",
-    "endDate": "July, 2024",
-    "experiences": [
-      "Developing the front end of the club system involves using PHP, HTML, CSS, and phpMyAdmin to create an interface where users can view group marks and admins can log in to manage these marks.",
-      "Developing the official website portal for Perbendaharaan Negeri Johor (PNJ) using WordPress involves setting up and configuring WordPress, managing the database with phpMyAdmin, and integrating simple HTML for enhanced visuals."
-    ],
-    "imageSrc": "history/pnj.png"
-  },
-  {
-    "role": "Tech Intern",
-    "organisation": "Bahagian Perancang Negeri",
-    "startDate": "September, 2021 ",
-    "endDate": "March, 2022",
-    "experiences": [
-      "Develop a website for the Pinjaman Barang ICT (ICT Equipment Loan) system, and this system use PHP, JavaScript, HTML, and CSS, with phpMyAdmin for database management.",
-      "The project includes creating a user-friendly interface where users can request to borrow ICT equipment, track request statuses, and view equipment availability. "
-    ],
-    "imageSrc": "history/bpen.png"
   }
 ]

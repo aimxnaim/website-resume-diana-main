@@ -41,13 +41,15 @@ const SkillGroup = ({ group }) => {
         ))}
       </div>
 
-      <div className={styles.iconRow}>
-        {group.icons.map((icon) => (
-          <PixelFrame key={icon} size="sm" innerClassName={styles.icon}>
-            <img src={getImageUrl(icon)} alt="" aria-hidden="true" />
-          </PixelFrame>
-        ))}
-      </div>
+      {group.icons?.length > 0 && (
+        <div className={styles.iconRow}>
+          {group.icons.map((icon) => (
+            <PixelFrame key={icon} size="sm" innerClassName={styles.icon}>
+              <img src={getImageUrl(icon)} alt="" aria-hidden="true" />
+            </PixelFrame>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
@@ -64,7 +66,7 @@ export const Skills = () => {
         <div className="eyebrow">
           <span className="lv">LV.04</span> MY TOOLBOX
         </div>
-        <h2>STUFF I BUILD WITH</h2>
+        <h2>WHAT I WORK WITH</h2>
       </div>
 
       {skillGroups.map((group) => (

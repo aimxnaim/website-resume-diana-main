@@ -6,9 +6,9 @@ import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
 import { getImageUrl } from "../../utils";
 
 const STICKERS = [
-  { label: "🐘 PHP", className: styles.s1 },
-  { label: "🔷 LARAVEL", className: styles.s2 },
-  { label: "⚛️ REACT", className: styles.s3 },
+  { label: "📊 ANALYSIS", className: styles.s1 },
+  { label: "🐍 PYTHON", className: styles.s2 },
+  { label: "🔍 VALIDATION", className: styles.s3 },
 ];
 
 export const Hero = () => {
@@ -55,19 +55,16 @@ export const Hero = () => {
           <div className={styles.pressStart}>★ PRESS START ★</div>
           <h1 className={styles.title}>
             HI, I&apos;M <span className={styles.accent}>DIANA</span>.
-            <br />I BUILD SYSTEMS
-            <br />THAT SHIP.
+            <br />I TURN DATA
+            <br />INTO DECISIONS.
           </h1>
           <p className={styles.description}>
-            I&apos;m a recent graduate with a degree in Information Systems
-            Engineering, passionate about systems and related fields. I have
-            hands-on experience with programming languages such as Java, PHP,
-            HTML, CSS, Python, and JavaScript. Additionally, I have a solid
-            understanding of Laravel framework concepts and possess a strong
-            skill set in system development programming and system
-            documentation. With my knowledge and passion for these areas, I
-            am well-equipped to contribute to projects that involve in PHP
-            Laravel Framework and also system development.
+            Data Analyst with experience in data analysis, data validation,
+            system implementation and project coordination. I extract, clean,
+            transform and analyse datasets, prepare reports and dashboards, and
+            run data quality checks. I also coordinate Sprint, SIT, UAT, FAT and
+            data migration activities across government technology projects,
+            with strong stakeholder and vendor coordination skills.
           </p>
           <div className={styles.actions}>
             <a href="#projects" className="btn btn-primary">

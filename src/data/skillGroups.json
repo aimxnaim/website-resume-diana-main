@@ -1,29 +1,53 @@
 [
   {
-    "title": "FRONTEND",
-    "level": 7,
+    "title": "DATA ANALYSIS",
+    "level": 8,
     "accent": "c1",
-    "chips": ["HTML", "CSS", "Bootstrap", "React", "Mobirise"],
-    "icons": ["skills/htmll.png", "skills/csss.png", "skills/reactt.png"]
+    "chips": [
+      "Data Extraction",
+      "Data Cleaning",
+      "Data Transformation",
+      "Trend Analysis",
+      "Python"
+    ],
+    "icons": ["skills/python.png"]
   },
   {
-    "title": "BACKEND",
-    "level": 8,
+    "title": "DATA QUALITY",
+    "level": 9,
     "accent": "c2",
-    "chips": ["PHP", "Laravel", "Node.js", "Python", "Java", "C++"],
-    "icons": [
-      "skills/php.png",
-      "skills/laravel.png",
-      "skills/nodee.png",
-      "skills/python.png",
-      "skills/c+++.png"
+    "chips": [
+      "Data Validation",
+      "Data Verification",
+      "Quality Checks",
+      "Data Integrity",
+      "Data Entry"
     ]
   },
   {
-    "title": "TOOLS",
-    "level": 7,
+    "title": "REPORTING",
+    "level": 8,
     "accent": "c3",
-    "chips": ["XAMPP", "Laragon", "phpMyAdmin", "WordPress"],
-    "icons": ["skills/xampp.png", "skills/laragon.png"]
+    "chips": [
+      "Data Summaries",
+      "Reports",
+      "Dashboards",
+      "Insight Communication"
+    ]
+  },
+  {
+    "title": "PROJECT DELIVERY",
+    "level": 8,
+    "accent": "c4",
+    "chips": [
+      "Sprint",
+      "SIT",
+      "UAT",
+      "FAT",
+      "Data Migration",
+      "Stakeholder Coordination",
+      "Vendor Coordination",
+      "Risk & Issue Management"
+    ]
   }
 ]

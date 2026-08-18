@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Ticker.module.css";
 
 const MESSAGE =
-  "INFORMATION SYSTEMS ENGINEERING  •  PHP · LARAVEL · REACT · JAVA  •  CGPA 3.44  •  2 TECH INTERNSHIPS  •  BUILDING SYSTEMS SINCE 2021  •  ";
+  "DATA ANALYST  •  VALIDATION · REPORTING · DASHBOARDS  •  CGPA 3.17  •  SPRINT · SIT · UAT · FAT  •  GOVERNMENT TECHNOLOGY PROJECTS  •  ";
 
 export const Ticker = () => (
   <div className={styles.ticker} aria-hidden="true">

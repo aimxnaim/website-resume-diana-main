@@ -9,16 +9,19 @@ import { getImageUrl } from "../../utils";
 const TERMINAL_LINES = [
   {
     prompt: "$ whoami",
-    result: "Nordiana Sahira — Information Systems Engineering grad",
-  },
-  { prompt: "$ stack", result: "PHP · Laravel · Java · React · Python" },
-  {
-    prompt: "$ experience",
-    result: "3 roles since 2021, 2 as tech intern",
+    result: "Nordiana Sahira — Data Analyst, Iskandar Puteri",
   },
   {
     prompt: "$ focus",
-    result: "PHP Laravel framework & system development",
+    result: "data analysis · validation · reporting · dashboards",
+  },
+  {
+    prompt: "$ experience",
+    result: "3 roles across government technology projects",
+  },
+  {
+    prompt: "$ now",
+    result: "SHTJ · JohorPay · Bantuan Kasih Johor",
   },
 ];
 
@@ -28,13 +31,13 @@ const EDUCATION = [
     alt: "Server icon",
     school: "University Of Technology MARA, Jasin",
     detail:
-      "Bachelor of Information Systems (Hons.) Information Systems Engineering — CGPA : 3.44",
+      "Bachelor of Information Systems (Hons.) Information Systems Engineering — CGPA : 3.17",
   },
   {
     icon: "about/uiIcon.png",
     alt: "UI icon",
     school: "University Of Technology MARA, Jasin",
-    detail: "Diploma in Computer Science — CGPA : 3.30",
+    detail: "Diploma in Computer Science — CGPA : 3.40",
   },
 ];
 
@@ -57,13 +60,13 @@ export const About = () => {
           </div>
           <h2 className={styles.heading}>NICE TO MEET YOU.</h2>
           <p className={styles.intro}>
-            Throughout my university studies, I have gained nearly 2 years of
-            hands-on programming experience, particularly excelling in building
-            websites from the ground up. My front-end skills include
-            technologies such as CSS, Bootstrap, React.js, and Mobirise.
-            Additionally, I possess back-end expertise in Node.js, Laravel,
-            Laragon, and XAMPP, allowing me to build full-stack applications
-            that are both dynamic and responsive.
+            I work where data meets delivery. Day to day that means extracting,
+            cleaning and transforming datasets from multiple sources, hunting
+            down inconsistencies, and turning what I find into summaries,
+            reports and dashboards that managers can actually decide on. The
+            other half of the job is getting systems live — coordinating Sprint,
+            SIT, UAT, FAT and data migration with vendors and end users so
+            releases land on time and on scope.
           </p>
 
           <ul className={styles.education}>

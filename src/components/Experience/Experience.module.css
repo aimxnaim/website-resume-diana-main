@@ -37,6 +37,18 @@
   height: auto;
 }
 
+/* Shown in place of the logo for employers with no image asset. */
+.monogram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  font-family: var(--font-pixel);
+  font-size: 16px;
+  color: var(--color-yellow);
+}
+
 .role {
   font-family: var(--font-pixel);
   font-size: 13px;
@@ -59,6 +71,14 @@
   color: var(--color-ink);
   border: 2px solid var(--color-outline);
   padding: 5px 8px;
+}
+
+.location {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: var(--font-mono);
+  font-size: 17px;
+  color: var(--color-muted);
 }
 
 .bullets {

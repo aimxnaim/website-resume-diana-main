@@ -55,6 +55,10 @@
   background: var(--color-green);
 }
 
+.filled.c4 {
+  background: var(--color-purple);
+}
+
 .inView .seg {
   transform: scaleX(1);
 }

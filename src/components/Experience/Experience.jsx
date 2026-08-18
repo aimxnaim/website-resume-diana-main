@@ -14,10 +14,16 @@ const HistoryCard = ({ item }) => {
       <PixelFrame innerClassName={styles.card}>
         <div className={styles.cardHead}>
           <PixelFrame size="sm" innerClassName={styles.logo}>
-            <img
-              src={getImageUrl(item.imageSrc)}
-              alt={`${item.organisation} logo`}
-            />
+            {item.imageSrc ? (
+              <img
+                src={getImageUrl(item.imageSrc)}
+                alt={`${item.organisation} logo`}
+              />
+            ) : (
+              <span className={styles.monogram} aria-hidden="true">
+                {item.logoText}
+              </span>
+            )}
           </PixelFrame>
           <div>
             <h3 className={styles.role}>{item.role}</h3>
@@ -25,6 +31,9 @@ const HistoryCard = ({ item }) => {
             <span className={styles.dates}>
               {item.startDate.trim()} — {item.endDate.trim()}
             </span>
+            {item.location && (
+              <span className={styles.location}>{item.location}</span>
+            )}
           </div>
         </div>
 

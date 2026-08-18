@@ -188,6 +188,11 @@ button:focus-visible {
   color: var(--color-green);
 }
 
+.chip-c4 {
+  background: rgba(185, 139, 255, 0.16);
+  color: var(--color-purple);
+}
+
 /* ---------- scroll reveal ---------- */
 .reveal {
   opacity: 0;
