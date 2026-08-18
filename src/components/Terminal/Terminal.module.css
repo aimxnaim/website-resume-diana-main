@@ -1,0 +1,81 @@
+@import "../../vars.css";
+
+.terminal {
+  overflow: hidden;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: var(--color-panel-soft);
+  border-bottom: 3px solid var(--color-outline);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-outline);
+}
+
+.red {
+  background: var(--color-pink);
+}
+
+.yellow {
+  background: var(--color-yellow);
+}
+
+.green {
+  background: var(--color-green);
+}
+
+.barTitle {
+  margin-left: 6px;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: var(--color-muted);
+}
+
+.body {
+  padding: 20px;
+  font-family: var(--font-mono);
+  font-size: 19px;
+  min-height: 240px;
+}
+
+.line {
+  margin-bottom: 6px;
+  color: var(--color-muted);
+}
+
+.prompt {
+  color: var(--color-green);
+}
+
+.result {
+  color: var(--color-text);
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  background: var(--color-yellow);
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
+}

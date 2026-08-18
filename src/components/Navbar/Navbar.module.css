@@ -1,93 +1,132 @@
 @import "../../vars.css";
 
-.navbar {
-  position: relative;
+.header {
+  position: fixed;
+  top: 6px;
+  left: 0;
+  right: 0;
+  z-index: 70;
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 920px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 61px;
-  z-index: 2;
-  margin: 0 10%;
+  background: rgba(35, 26, 61, 0.88);
+  backdrop-filter: blur(10px);
+  border: 3px solid var(--color-outline);
+  padding: 12px 18px;
+  transition: padding 0.25s ease;
 }
 
-.logoTitle {
+.scrolled {
+  padding: 7px 16px;
+}
+
+.logo {
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.logo span {
+  color: var(--color-pink);
+}
+
+.links {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Adjusts space between logo and title */
-}
-.title {
-  font-size: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--color-text);
-  padding-left: 20px;
+  gap: 24px;
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.list a {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-muted);
+  transition: color 0.15s ease;
+}
+
+.list a:hover {
+  color: var(--color-yellow);
+}
+
+.cta {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  background: var(--color-pink);
+  color: var(--color-ink);
+  padding: 10px 14px;
+  border: 3px solid var(--color-outline);
+  box-shadow: 3px 3px 0 var(--color-outline);
+  white-space: nowrap;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.cta:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--color-outline);
+}
 
 .menuBtn {
   display: none;
-}
-
-.menu {
-  display: flex;
-}
-
-.menuItems {
-  display: flex;
-  gap: 47px;
-  list-style: none;
-}
-
-.menuItems a {
-  font-size: 25px;
+  background: var(--color-panel-soft);
   color: var(--color-text);
-  text-decoration: none;
-}
-
-.aboutImage {
-  width: 40px;
-  height: 40px
+  border: 3px solid var(--color-outline);
+  box-shadow: 3px 3px 0 var(--color-outline);
+  font-size: 16px;
+  line-height: 1;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 830px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu {
-    position: absolute;
-    right: 0;
-    margin-right: 10%;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 11px;
-    z-index: 3;
-  }
-
   .menuBtn {
     display: block;
-    cursor: pointer;
   }
 
-  .menuItems {
+  .links {
     display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
     flex-direction: column;
-    align-items: center;
-    gap: 13px;
-    border-radius: 10px;
-    background: rgb(25, 55, 109);
-    background: linear-gradient(
-      0deg,
-      rgba(25, 55, 109, 0.2) 0%,
-      rgba(25, 55, 109, 1) 100%
-    );
-    padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    align-items: stretch;
+    gap: 14px;
+    background: var(--color-panel);
+    border: 3px solid var(--color-outline);
+    box-shadow: 5px 5px 0 var(--color-outline);
+    padding: 20px 24px;
   }
 
-  .menuOpen {
+  .open {
     display: flex;
-    z-index: 1;
+  }
+
+  .list {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .cta {
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inner,
+  .cta {
+    transition: none;
   }
 }

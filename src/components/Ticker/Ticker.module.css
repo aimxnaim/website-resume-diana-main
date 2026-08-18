@@ -1,0 +1,40 @@
+@import "../../vars.css";
+
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-panel-soft);
+  border-top: 3px solid var(--color-outline);
+  border-bottom: 3px solid var(--color-outline);
+  position: relative;
+  z-index: 1;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: marquee 24s linear infinite;
+}
+
+.item {
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: var(--color-yellow);
+  padding: 16px 0;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}

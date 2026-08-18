@@ -1,120 +1,82 @@
 @import "../../vars.css";
 
 .container {
-  position: relative;
-  background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
-  z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+  composes: section from global;
 }
 
-.title {
-  color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
+.grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 48px;
+  align-items: start;
 }
 
-.content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.terminalCol {
+  position: sticky;
+  top: 120px;
 }
 
-.aboutImage {
-  width: 35%;
+.heading {
+  font-family: var(--font-pixel);
+  font-size: 20px;
+  margin-bottom: 18px;
 }
 
-.aboutItems {
-  color: var(--color-text);
+.intro {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--color-muted);
+  margin-bottom: 28px;
+}
+
+.education {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 18px;
 }
 
-.aboutItem {
+.eduCard {
   display: flex;
-  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px;
+}
+
+.eduIcon {
+  display: flex;
   align-items: center;
-  border-radius: 20px;
-  list-style: none;
-  padding: 25px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: 0.4s;
+  justify-content: center;
+  padding: 8px;
+  flex-shrink: 0;
 }
 
-.aboutItem:hover {
-  background-size: 100% 100%;
+.eduIcon img {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
-.aboutItem h3 {
-  font-size: 25px;
-  font-weight: 600;
+.eduSchool {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  color: var(--color-yellow);
+  margin-bottom: 8px;
 }
 
-.aboutItem p {
-  font-size: 20px;
+.eduDetail {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  color: var(--color-muted);
 }
 
 @media screen and (max-width: 830px) {
-  .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .content {
-    flex-direction: column;
-  }
-
-  .aboutImage {
-    display: none;
-  }
-
-  .aboutItems {
-    margin-top: 20px;
-  }
-
-  .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+  .terminalCol {
+    position: static;
   }
 }
-
-.resizeImage {
-  width: 50%;  /* Make the image 20% bigger */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.justifyText {
-  text-align: justify;
-}
-
-.title {
-  margin-top: 3px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.icon {
-  width: 20px; /* Set desired width */
-  height: 20px; /* Set desired height */
-  margin-right: 5px; /* Space between icon and text */
-  vertical-align: middle; /* Align icon with the text */
-}
-
-.pabout {
-  font-size: 80px;
-}
-
-

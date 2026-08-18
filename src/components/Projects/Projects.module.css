@@ -1,31 +1,18 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 70px;
-  color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 50px;
+  composes: section from global;
 }
 
-.title {
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  align-items: stretch;
 }
 
-.projects {
-  margin-top: 37px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-}
-
-.title {
-  text-align: center;
+@media screen and (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

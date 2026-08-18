@@ -1,0 +1,29 @@
+[
+  {
+    "title": "FRONTEND",
+    "level": 7,
+    "accent": "c1",
+    "chips": ["HTML", "CSS", "Bootstrap", "React", "Mobirise"],
+    "icons": ["skills/htmll.png", "skills/csss.png", "skills/reactt.png"]
+  },
+  {
+    "title": "BACKEND",
+    "level": 8,
+    "accent": "c2",
+    "chips": ["PHP", "Laravel", "Node.js", "Python", "Java", "C++"],
+    "icons": [
+      "skills/php.png",
+      "skills/laravel.png",
+      "skills/nodee.png",
+      "skills/python.png",
+      "skills/c+++.png"
+    ]
+  },
+  {
+    "title": "TOOLS",
+    "level": 7,
+    "accent": "c3",
+    "chips": ["XAMPP", "Laragon", "phpMyAdmin", "WordPress"],
+    "icons": ["skills/xampp.png", "skills/laragon.png"]
+  }
+]

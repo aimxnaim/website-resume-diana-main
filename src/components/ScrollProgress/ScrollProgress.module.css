@@ -1,0 +1,21 @@
+@import "../../vars.css";
+
+.track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--color-outline);
+  z-index: 100;
+}
+
+.fill {
+  height: 100%;
+  width: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-yellow) 0 8px,
+    var(--color-pink) 8px 16px
+  );
+}

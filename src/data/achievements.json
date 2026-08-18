@@ -1,0 +1,24 @@
+[
+  {
+    "icon": "🎓",
+    "value": "3.44",
+    "label": "CGPA, BSc Information Systems Engineering"
+  },
+  {
+    "icon": "💼",
+    "value": "3",
+    "countTo": 3,
+    "label": "roles held since 2021"
+  },
+  {
+    "icon": "🚀",
+    "value": "3",
+    "countTo": 3,
+    "label": "systems shipped end to end"
+  },
+  {
+    "icon": "⏱️",
+    "value": "~2 YRS",
+    "label": "hands-on programming experience"
+  }
+]
